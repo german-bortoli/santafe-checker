@@ -18,5 +18,6 @@ composer install
 
 Por último agregamos un cronjob, el sistema nos enviará una notificación muy bonita si aparecen cambios en el sitio de la provincia.
 
+```
 * * * * * {PATH_PROYECTO}/santafe-checker/santafe schedule:run >> /dev/null 2>&1
 ````

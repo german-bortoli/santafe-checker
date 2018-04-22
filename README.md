@@ -21,3 +21,14 @@ Por último agregamos un cronjob, el sistema nos enviará una notificación muy 
 ```
 * * * * * {PATH_PROYECTO}/santafe-checker/santafe schedule:run >> /dev/null 2>&1
 ````
+
+
+### SCREENSHOTS:
+
+<p align="center">
+    <img title="Santa Fe Notification" height="100" src="https://github.com/Germanaz0/santafe-checker/blob/master/app/assets/notification.png" />
+</p>
+
+<p align="center">
+    <img title="Santa Fe Console" height="100" src="https://github.com/Germanaz0/santafe-checker/blob/master/app/assets/console.png" />
+</p>

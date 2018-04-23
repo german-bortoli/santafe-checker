@@ -26,9 +26,9 @@ Por último agregamos un cronjob, el sistema nos enviará una notificación muy 
 ### SCREENSHOTS:
 
 <p align="center">
-    <img title="Santa Fe Notification" height="100" src="https://github.com/Germanaz0/santafe-checker/blob/master/app/assets/notification.png" />
+    <img title="Santa Fe Notification" height="100" src="https://github.com/Germanaz0/santafe-checker/blob/master/resources/assets/notification.png" />
 </p>
 
 <p align="center">
-    <img title="Santa Fe Console" height="100" src="https://github.com/Germanaz0/santafe-checker/blob/master/app/assets/console.png" />
+    <img title="Santa Fe Console" height="100" src="https://github.com/Germanaz0/santafe-checker/blob/master/resources/assets/console.png" />
 </p>

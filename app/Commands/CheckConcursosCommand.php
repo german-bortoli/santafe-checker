@@ -31,8 +31,6 @@ class CheckConcursosCommand extends Command
     public function handle(): void
     {
 
-        $icon = app_path('assets')."/timer.png";
-
         $output = "";
         $this->task("Checking site", function () use (&$output) {
             $output = file_get_contents("https://www.santafe.gov.ar/index.php/web/guia/convocatorias?ajax_call=1&page=1&estado=0");
@@ -53,11 +51,17 @@ class CheckConcursosCommand extends Command
         });
 
         if ($check_input !== $check_output) {
-            $this->notify("Santa Fe informa", "Hubo cambios en los concursos", $icon);
+            $this->sendNotification();
         }
 
         Storage::put($filename, $output);
         
+    }
+
+    protected function sendNotification(): void
+    {
+        $icon = resource_path('assets/timer.png');
+        $this->notify("Santa Fe informa", "Hubo cambios en los concursos", $icon);
     }
 
     /**
